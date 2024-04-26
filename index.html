@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chapter 9 (Assignment)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-12 text-center my-5">
+            <h1 class="pt-4">Chapter 9 (Assignment)</h1>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2><b>Question 1:</b> Write a function in JavaScript called roundNumber() that takes a number as input and
+                    returns the number rounded to the nearest integer.</h2>
+                <p>Hint: Consider using the Math.round() method to round the input number to the nearest integer.</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 py-3">
+                <form>
+                    
+                    <h2>Enter a Decimal Number</h2><input class="form-control" id="Input" type="text"
+                        placeholder="Enter a number" required>
+
+                    <Button class="btn btn-primary mt-4" onclick="roundNumber()">Round off</Button>
+                </form>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                <h1>Result</h1>
+                <h2 id="resultround"></h2>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <h2> <b>Question 2:</b> Create a function called generateRandomInRange(min, max) that generates a random
+                    integer between min and max (inclusive) in JavaScript.</h2>
+                <p>Hint: You can use Math.random() to generate a random number between 1 and 2, then scale and shift it
+                    to fit within the specified range.</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                <button class="btn btn-primary" onclick="RandomNumber()">Random Number</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <h2 id="random_result"></h2>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <h2><b>Question 3:</b> Write a JavaScript function called convertToNumber(str) that takes a string as input and
+                    converts it into a number. Ensure the function returns NaN if the string cannot be converted into a
+                    valid number.</h2>
+                <p>Hint: Look into the parseInt() and parseFloat() functions in JavaScript. Make sure to handle cases
+                    where the string is not a valid number.</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <form>
+                    <input class="form-control" id="strinput" type="text" placeholder="Enter a number" required>
+                    <button class="btn btn-primary mt-4" onclick="cnvrttoNumber()">Convert to Number</button>
+                </form>
+
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <h1>Result</h1>
+                <h2 id="ConverResult"></h2>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
